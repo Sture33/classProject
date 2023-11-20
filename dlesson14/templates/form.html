@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><a href="{%url 'index'%}">Home</a></p>
+<p>{{reply}}</p>
+    <form method="POST" style="display: flex; flex-direction: column; width: 400px; margin: 0 auto;" novalidate>
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

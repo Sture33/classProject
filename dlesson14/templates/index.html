@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <a href="{%url 'form'%}">Create</a>
+</header>
+    {% for feedback in feedback_list%}
+    <p><a href="{%url 'detail'  feedback.pk%}">{{feedback}}</a></p>
+    {%endfor%}
+</body>
+</html>
